@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.love.helloapp-mergeDebugResources-47:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/home/ruhua/.gradle/caches/8.10/transforms/4031e8e676e2dc9779ee62ae5ec6c4f0/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

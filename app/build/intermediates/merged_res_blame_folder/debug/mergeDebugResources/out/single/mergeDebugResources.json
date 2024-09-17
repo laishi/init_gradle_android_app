@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.love.helloapp-debug-49:/mipmap_ic_launcher_round.png.flat",
+        "source": "com.love.helloapp-main-51:/mipmap/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.love.helloapp-debug-49:/mipmap_ic_launcher.png.flat",
+        "source": "com.love.helloapp-main-51:/mipmap/ic_launcher.png"
+    }
+]

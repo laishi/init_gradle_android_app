@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-@OptIn(ExperimentalMaterial3Api::class)
+// @OptIn(ExperimentalMaterial3Api::class)
 @Preview
 @Composable
 fun ScaffoldExample() {
@@ -36,9 +36,17 @@ fun ScaffoldExample() {
                 modifier = Modifier.padding(8.dp),
                 text =
                 """
-                    This is an example of a scaffold. It uses the Scaffold composable's parameters to create a screen with a simple top app bar, bottom app bar, and floating action button.
+                    将军令
 
-                    It also contains some basic inner content, such as this text.
+                    旌旗猎猎风云动，
+                    铁骑铮铮踏九州。
+                    沙场点兵豪气壮，
+                    万里江山一剑收。
+
+                    长枪如龙破敌阵，
+                    战鼓如雷震山河。
+                    血染征袍不言退，
+                    将军令下定乾坤。
 
                     You have pressed the floating action button $presses times.
                 """.trimIndent(),
