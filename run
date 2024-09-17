@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# ADB
+adb devices
+# 清理项目
+./gradlew clean
+
+# 构建调试版本
+./gradlew assembleDebug
+
+# 安装调试版本
+./gradlew installDebug
+
+# 启动应用
+adb shell am start -n com.love.helloapp/.MainActivity
+
