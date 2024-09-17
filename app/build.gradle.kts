@@ -43,22 +43,76 @@ kotlin {
 }
 
 dependencies {
+    // Activity 支持
+    implementation("androidx.activity:activity-compose:1.9.0")
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
+    // 基础 UI 组件
+    val composeBom = platform("androidx.compose:compose-bom:2024.09.00")
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+    implementation("androidx.compose.ui:ui")
 
-    implementation("androidx.appcompat:appcompat:1.7.0")
+    // 预览和调试工具
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+
+    // Material Design 组件
+    implementation("androidx.compose.material3:material3")
+
+    // 兼容性支持
+    val appcompat_version = "1.7.0"
+    implementation("androidx.appcompat:appcompat:$appcompat_version")
+    implementation("androidx.appcompat:appcompat-resources:$appcompat_version")
 }
+
+
+
+// dependencies {
+//     implementation("androidx.activity:activity-compose:1.9.0")
+//     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+
+//     implementation("androidx.compose.runtime:runtime-livedata")
+//     implementation("androidx.compose.runtime:runtime-rxjava2")
+
+//     val composeBom = platform("androidx.compose:compose-bom:2024.06.00")
+//     implementation(composeBom)
+//     androidTestImplementation(composeBom)
+
+//     val appcompat_version = "1.7.0"
+//     implementation("androidx.appcompat:appcompat:$appcompat_version")
+//     implementation("androidx.appcompat:appcompat-resources:$appcompat_version")
+
+//     // 实际安装具体的库
+//     implementation("androidx.compose.material3:material3")
+//     implementation("androidx.compose.foundation:foundation")
+
+//     implementation("androidx.compose.ui:ui")
+//     implementation("androidx.compose.ui:ui-tooling-preview")
+//     debugImplementation("androidx.compose.ui:ui-tooling")
+//     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+//     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+
+// }
+
+
+// dependencies {
+
+//     implementation(libs.androidx.core.ktx)
+//     implementation(libs.androidx.lifecycle.runtime.ktx)
+//     implementation(libs.androidx.activity.compose)
+//     implementation(platform(libs.androidx.compose.bom))
+//     implementation(libs.androidx.ui)
+//     implementation(libs.androidx.ui.graphics)
+//     implementation(libs.androidx.ui.tooling.preview)
+//     implementation(libs.androidx.material3)
+//     testImplementation(libs.junit)
+//     androidTestImplementation(libs.androidx.junit)
+//     androidTestImplementation(libs.androidx.espresso.core)
+//     androidTestImplementation(platform(libs.androidx.compose.bom))
+//     androidTestImplementation(libs.androidx.ui.test.junit4)
+//     debugImplementation(libs.androidx.ui.tooling)
+//     debugImplementation(libs.androidx.ui.test.manifest)
+
+//     implementation("androidx.appcompat:appcompat:1.7.0")
+// }

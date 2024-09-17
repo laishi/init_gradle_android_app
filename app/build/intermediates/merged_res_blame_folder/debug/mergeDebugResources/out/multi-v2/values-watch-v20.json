@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.love.helloapp-mergeDebugResources-47:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.love.helloapp-mergeDebugResources-49:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/home/ruhua/.gradle/caches/8.10/transforms/8db4594247df78f888119cc6fd58c469/transformed/appcompat-1.7.0/res/values-watch-v20/values-watch-v20.xml",
