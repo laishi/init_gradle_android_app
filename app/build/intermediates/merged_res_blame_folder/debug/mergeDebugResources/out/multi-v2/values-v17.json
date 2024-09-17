@@ -4,7 +4,7 @@
             "outputFile": "com.love.helloapp-mergeDebugResources-47:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/ruhua/.gradle/caches/8.10/transforms/4031e8e676e2dc9779ee62ae5ec6c4f0/transformed/appcompat-1.6.1/res/values-v17/values-v17.xml",
+                    "source": "/home/ruhua/.gradle/caches/8.10/transforms/8db4594247df78f888119cc6fd58c469/transformed/appcompat-1.7.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
